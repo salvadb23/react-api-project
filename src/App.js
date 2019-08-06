@@ -20,6 +20,11 @@ import './App.css';
  * 
  * */
 
+const flex = {
+  'display': 'flex',
+  'flex-direction': 'row',
+}
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -61,7 +66,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" style={flex}>
 
         {/** This input uses the controlled component pattern */}
         <form onSubmit={e => this.handleSubmit(e)}>
